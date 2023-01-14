@@ -7,7 +7,7 @@ public class Main {
     }
 
     public static boolean isPalindrome (String text) {
-        text = text.replaceAll("\\W","");//удаляем все ненужное
+        text = text.trim();//удаляем пробелы
         StringBuilder strBuilder = new StringBuilder(text);
         strBuilder.reverse(); //переворачиваем строку
         String invertedText = strBuilder.toString();//присваиваем перевернутую строку
